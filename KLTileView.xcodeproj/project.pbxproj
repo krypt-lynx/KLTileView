@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61979157EF4920814711EA90 /* ImagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 619795028E3C930F22C31164 /* ImagesModel.m */; };
+		FEEECBA317078C7200A8C99D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEECBA217078C7200A8C99D /* UIKit.framework */; };
+		FEEECBA517078C7200A8C99D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEECBA417078C7200A8C99D /* Foundation.framework */; };
+		FEEECBA717078C7200A8C99D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEECBA617078C7200A8C99D /* CoreGraphics.framework */; };
+		FEEECBAD17078C7200A8C99D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEEECBAB17078C7200A8C99D /* InfoPlist.strings */; };
+		FEEECBAF17078C7200A8C99D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEECBAE17078C7200A8C99D /* main.m */; };
+		FEEECBB317078C7200A8C99D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEECBB217078C7200A8C99D /* AppDelegate.m */; };
+		FEEECBB517078C7200A8C99D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEECBB417078C7200A8C99D /* Default.png */; };
+		FEEECBB717078C7200A8C99D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEECBB617078C7200A8C99D /* Default@2x.png */; };
+		FEEECBB917078C7200A8C99D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEEECBB817078C7200A8C99D /* Default-568h@2x.png */; };
+		FEEECBC017078CBD00A8C99D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEECBBF17078CBD00A8C99D /* QuartzCore.framework */; };
+		FEEECBC217078CF000A8C99D /* previews.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FEEECBC117078CF000A8C99D /* previews.bundle */; };
+		FEEECBC517078D7C00A8C99D /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEECBC417078D2100A8C99D /* DemoViewController.m */; };
+		FEEECBCB17078DBE00A8C99D /* KLTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEECBC817078DBE00A8C99D /* KLTileView.m */; };
+		FEEECBCC17078DBE00A8C99D /* KLTileViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEECBCA17078DBE00A8C99D /* KLTileViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		619791F031A39D1A1B2119E8 /* ImagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesModel.h; sourceTree = "<group>"; };
+		619795028E3C930F22C31164 /* ImagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesModel.m; sourceTree = "<group>"; };
+		FEEECB9F17078C7200A8C99D /* KLTileView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLTileView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEECBA217078C7200A8C99D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FEEECBA417078C7200A8C99D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FEEECBA617078C7200A8C99D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FEEECBAA17078C7200A8C99D /* KLTileView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KLTileView-Info.plist"; sourceTree = "<group>"; };
+		FEEECBAC17078C7200A8C99D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FEEECBAE17078C7200A8C99D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEEECBB017078C7200A8C99D /* KLTileView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KLTileView-Prefix.pch"; sourceTree = "<group>"; };
+		FEEECBB117078C7200A8C99D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEEECBB217078C7200A8C99D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEEECBB417078C7200A8C99D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FEEECBB617078C7200A8C99D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FEEECBB817078C7200A8C99D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FEEECBBF17078CBD00A8C99D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FEEECBC117078CF000A8C99D /* previews.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = previews.bundle; sourceTree = "<group>"; };
+		FEEECBC317078D2100A8C99D /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		FEEECBC417078D2100A8C99D /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		FEEECBC717078DBE00A8C99D /* KLTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTileView.h; sourceTree = "<group>"; };
+		FEEECBC817078DBE00A8C99D /* KLTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTileView.m; sourceTree = "<group>"; };
+		FEEECBC917078DBE00A8C99D /* KLTileViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTileViewCell.h; sourceTree = "<group>"; };
+		FEEECBCA17078DBE00A8C99D /* KLTileViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTileViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEEECB9C17078C7200A8C99D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEECBC017078CBD00A8C99D /* QuartzCore.framework in Frameworks */,
+				FEEECBA317078C7200A8C99D /* UIKit.framework in Frameworks */,
+				FEEECBA517078C7200A8C99D /* Foundation.framework in Frameworks */,
+				FEEECBA717078C7200A8C99D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEEECB9617078C7200A8C99D = {
+			isa = PBXGroup;
+			children = (
+				FEEECBC617078DA000A8C99D /* KLTileView */,
+				FEEECBA817078C7200A8C99D /* KLTileViewDemo */,
+				FEEECBA117078C7200A8C99D /* Frameworks */,
+				FEEECBA017078C7200A8C99D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEEECBA017078C7200A8C99D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEEECB9F17078C7200A8C99D /* KLTileView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEEECBA117078C7200A8C99D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEEECBBF17078CBD00A8C99D /* QuartzCore.framework */,
+				FEEECBA217078C7200A8C99D /* UIKit.framework */,
+				FEEECBA417078C7200A8C99D /* Foundation.framework */,
+				FEEECBA617078C7200A8C99D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEEECBA817078C7200A8C99D /* KLTileViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FEEECBC317078D2100A8C99D /* DemoViewController.h */,
+				FEEECBC417078D2100A8C99D /* DemoViewController.m */,
+				FEEECBC117078CF000A8C99D /* previews.bundle */,
+				FEEECBB117078C7200A8C99D /* AppDelegate.h */,
+				FEEECBB217078C7200A8C99D /* AppDelegate.m */,
+				FEEECBA917078C7200A8C99D /* Supporting Files */,
+				619795028E3C930F22C31164 /* ImagesModel.m */,
+				619791F031A39D1A1B2119E8 /* ImagesModel.h */,
+			);
+			name = KLTileViewDemo;
+			path = KLTileView;
+			sourceTree = "<group>";
+		};
+		FEEECBA917078C7200A8C99D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEEECBAA17078C7200A8C99D /* KLTileView-Info.plist */,
+				FEEECBAB17078C7200A8C99D /* InfoPlist.strings */,
+				FEEECBAE17078C7200A8C99D /* main.m */,
+				FEEECBB017078C7200A8C99D /* KLTileView-Prefix.pch */,
+				FEEECBB417078C7200A8C99D /* Default.png */,
+				FEEECBB617078C7200A8C99D /* Default@2x.png */,
+				FEEECBB817078C7200A8C99D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEEECBC617078DA000A8C99D /* KLTileView */ = {
+			isa = PBXGroup;
+			children = (
+				FEEECBC717078DBE00A8C99D /* KLTileView.h */,
+				FEEECBC817078DBE00A8C99D /* KLTileView.m */,
+				FEEECBC917078DBE00A8C99D /* KLTileViewCell.h */,
+				FEEECBCA17078DBE00A8C99D /* KLTileViewCell.m */,
+			);
+			name = KLTileView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEEECB9E17078C7200A8C99D /* KLTileView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEEECBBC17078C7200A8C99D /* Build configuration list for PBXNativeTarget "KLTileView" */;
+			buildPhases = (
+				FEEECB9B17078C7200A8C99D /* Sources */,
+				FEEECB9C17078C7200A8C99D /* Frameworks */,
+				FEEECB9D17078C7200A8C99D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KLTileView;
+			productName = KLTileView;
+			productReference = FEEECB9F17078C7200A8C99D /* KLTileView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEEECB9717078C7200A8C99D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = home;
+			};
+			buildConfigurationList = FEEECB9A17078C7200A8C99D /* Build configuration list for PBXProject "KLTileView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FEEECB9617078C7200A8C99D;
+			productRefGroup = FEEECBA017078C7200A8C99D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEEECB9E17078C7200A8C99D /* KLTileView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEEECB9D17078C7200A8C99D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEECBAD17078C7200A8C99D /* InfoPlist.strings in Resources */,
+				FEEECBB517078C7200A8C99D /* Default.png in Resources */,
+				FEEECBB717078C7200A8C99D /* Default@2x.png in Resources */,
+				FEEECBB917078C7200A8C99D /* Default-568h@2x.png in Resources */,
+				FEEECBC217078CF000A8C99D /* previews.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEEECB9B17078C7200A8C99D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEEECBAF17078C7200A8C99D /* main.m in Sources */,
+				FEEECBB317078C7200A8C99D /* AppDelegate.m in Sources */,
+				FEEECBC517078D7C00A8C99D /* DemoViewController.m in Sources */,
+				FEEECBCB17078DBE00A8C99D /* KLTileView.m in Sources */,
+				FEEECBCC17078DBE00A8C99D /* KLTileViewCell.m in Sources */,
+				61979157EF4920814711EA90 /* ImagesModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEEECBAB17078C7200A8C99D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEEECBAC17078C7200A8C99D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEEECBBA17078C7200A8C99D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEEECBBB17078C7200A8C99D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEEECBBD17078C7200A8C99D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KLTileView/KLTileView-Prefix.pch";
+				INFOPLIST_FILE = "KLTileView/KLTileView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FEEECBBE17078C7200A8C99D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KLTileView/KLTileView-Prefix.pch";
+				INFOPLIST_FILE = "KLTileView/KLTileView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEEECB9A17078C7200A8C99D /* Build configuration list for PBXProject "KLTileView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEECBBA17078C7200A8C99D /* Debug */,
+				FEEECBBB17078C7200A8C99D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEEECBBC17078C7200A8C99D /* Build configuration list for PBXNativeTarget "KLTileView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEECBBD17078C7200A8C99D /* Debug */,
+				FEEECBBE17078C7200A8C99D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEEECB9717078C7200A8C99D /* Project object */;
+}
