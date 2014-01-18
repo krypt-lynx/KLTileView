@@ -24,7 +24,7 @@ typedef enum
 } KLTileViewContentAlignment;
 
 
-@interface KLTileView : UIView  <KLTileViewItemDelegate>
+@interface KLTileView : UIView  <KLTileViewItemDelegate, UIGestureRecognizerDelegate>
 {
     NSObject<KLTileViewDelegate> *delegate;
     NSObject<KLTileViewDataSource> *dataSource;

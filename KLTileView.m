@@ -36,6 +36,7 @@ const float SCROLL_FIELD = 50;
                                                                                            action:@selector(startDrag:)] autorelease];
         dragGr = lpgr;
         [lpgr setEnabled:NO];
+        [lpgr setDelegate:self];
         
         [lpgr setMinimumPressDuration:0.25];
         [self addGestureRecognizer:lpgr];
@@ -45,10 +46,14 @@ const float SCROLL_FIELD = 50;
     return self;
 }
 
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    UIView *topView = [gestureRecognizer.view hitTest:[gestureRecognizer locationInView:self] withEvent:nil];
+    return [[topView class] isSubclassOfClass:[KLTileViewCell class]];
+}
+
 - (void) startDrag:(UILongPressGestureRecognizer*) lpgr
 {
-    //NSLog(@"lprg: %d", lpgr.state);
-
     CGPoint scPt = [lpgr locationInView:scroller];
     CGPoint rtPt = [lpgr locationInView:self];
 
