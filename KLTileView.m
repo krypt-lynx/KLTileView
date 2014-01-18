@@ -38,7 +38,7 @@ const float SCROLL_FIELD = 50;
         [lpgr setEnabled:NO];
         [lpgr setDelegate:self];
         
-        [lpgr setMinimumPressDuration:0.25];
+        [lpgr setMinimumPressDuration:0.1];
         [self addGestureRecognizer:lpgr];
         
         activeCellIndex = -1;
@@ -336,6 +336,16 @@ const float SCROLL_FIELD = 50;
     }
 
     [dragGr setEnabled:editing];
+}
+
+- (void)setItemMoveDelay:(float)itemMoveDelay
+{
+    [dragGr setMinimumPressDuration:itemMoveDelay];
+}
+
+- (float)itemMoveDelay
+{
+    return [dragGr minimumPressDuration];
 }
 
 - (void) dealloc

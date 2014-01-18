@@ -61,6 +61,7 @@ typedef enum
 @property (nonatomic, assign) NSObject<KLTileViewDataSource> *dataSource;
 
 @property (nonatomic, assign) KLTileViewContentAlignment contentAlignment;
+@property (nonatomic, assign) float itemMoveDelay;
 
 - (void) reloadData;
 - (void) setEditing:(BOOL)editing animated:(BOOL)animated;
