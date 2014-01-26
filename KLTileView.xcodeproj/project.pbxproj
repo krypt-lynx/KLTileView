@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		61979157EF4920814711EA90 /* ImagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 619795028E3C930F22C31164 /* ImagesModel.m */; };
 		FEEECBA317078C7200A8C99D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEECBA217078C7200A8C99D /* UIKit.framework */; };
 		FEEECBA517078C7200A8C99D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEECBA417078C7200A8C99D /* Foundation.framework */; };
 		FEEECBA717078C7200A8C99D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEECBA617078C7200A8C99D /* CoreGraphics.framework */; };
@@ -25,8 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		619791F031A39D1A1B2119E8 /* ImagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesModel.h; sourceTree = "<group>"; };
-		619795028E3C930F22C31164 /* ImagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesModel.m; sourceTree = "<group>"; };
 		FEEECB9F17078C7200A8C99D /* KLTileView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLTileView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEEECBA217078C7200A8C99D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FEEECBA417078C7200A8C99D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,8 +100,6 @@
 				FEEECBB117078C7200A8C99D /* AppDelegate.h */,
 				FEEECBB217078C7200A8C99D /* AppDelegate.m */,
 				FEEECBA917078C7200A8C99D /* Supporting Files */,
-				619795028E3C930F22C31164 /* ImagesModel.m */,
-				619791F031A39D1A1B2119E8 /* ImagesModel.h */,
 			);
 			name = KLTileViewDemo;
 			path = KLTileView;
@@ -206,7 +201,6 @@
 				FEEECBC517078D7C00A8C99D /* DemoViewController.m in Sources */,
 				FEEECBCB17078DBE00A8C99D /* KLTileView.m in Sources */,
 				FEEECBCC17078DBE00A8C99D /* KLTileViewCell.m in Sources */,
-				61979157EF4920814711EA90 /* ImagesModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
