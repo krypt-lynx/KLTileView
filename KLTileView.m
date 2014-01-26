@@ -70,6 +70,7 @@ const float SCROLL_FIELD = 50;
             
             activeCellIndex = cellIndex;
             activeCell = (activeCellIndex>=0)?[cells objectAtIndex:cellIndex]:nil;
+            floatingActiveCell = activeCell;
             [scroller bringSubviewToFront:activeCell];
             [activeCell setState:SlidesViewItemStateActive animated:YES];
             
@@ -233,10 +234,12 @@ const float SCROLL_FIELD = 50;
 {
     int index = [cells indexOfObject:slidesViewItem];
 
-    
     if ([dataSource respondsToSelector:@selector(tileView:canEditCellAtIndex:)] && ![dataSource tileView:self canEditCellAtIndex:index])
         return;
 
+    if (floatingActiveCell == slidesViewItem)
+        floatingActiveCell = nil;
+    
     [cells removeObject:slidesViewItem];
     [self updateLayoutAnimated:YES];
 
@@ -252,6 +255,15 @@ const float SCROLL_FIELD = 50;
                      {
                          [slidesViewItem removeFromSuperview];
                      }];
+}
+
+- (void) tileViewItemDidFinishAnimatingFromState:(SlidesViewItemState)state
+{
+    if ((state == SlidesViewItemStateActive) &&
+        (floatingActiveCell.state == SlidesViewItemStateNormal))
+    {
+        floatingActiveCell = nil;
+    }
 }
 
 - (void) setFrame:(CGRect)frame
@@ -308,7 +320,10 @@ const float SCROLL_FIELD = 50;
     for (KLTileViewCell *view in cells)
     {
         if (view != activeCell)
+        {
             [view setFrame:CGRectMake(offset.x + cellSize.width * col, offset.y + cellSize.height * row, cellSize.width, cellSize.height)];
+            [scroller bringSubviewToFront:view];
+        }
         
         col++;
         if (col >= columnCount)
@@ -317,7 +332,8 @@ const float SCROLL_FIELD = 50;
             row++;
         }
     }
-    
+    if (floatingActiveCell)
+        [scroller bringSubviewToFront:floatingActiveCell];
 
 }
 

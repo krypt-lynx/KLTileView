@@ -37,6 +37,7 @@ typedef enum
 
     int activeCellIndex;
     KLTileViewCell *activeCell;
+    KLTileViewCell *floatingActiveCell;
     CGSize touchOffset;
     
     CGPoint holdPoint;

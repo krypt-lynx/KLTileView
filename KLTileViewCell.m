@@ -91,6 +91,7 @@ const float BTN_SIZE = 25;
 
 - (void) setState:(SlidesViewItemState)state_ animated:(BOOL)animated_
 {
+    oldState = state;
     state = state_;
 
     if (animated_)
@@ -120,9 +121,21 @@ const float BTN_SIZE = 25;
     }
     if (animated_)
     {
+        [UIView setAnimationDelegate:self];
+        [UIView setAnimationDidStopSelector:@selector(stateAnimationFinished)];
         [UIView commitAnimations];
     }
+    else
+    {
+        [delegate tileViewItemDidFinishAnimatingFromState:state_];
+        oldState = state;
+    }
+}
 
+- (void)stateAnimationFinished:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context
+{
+    [delegate tileViewItemDidFinishAnimatingFromState:oldState];
+    oldState = state;
 }
 
 - (void) setEditing:(BOOL)editing

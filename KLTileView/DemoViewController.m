@@ -65,8 +65,6 @@
 - (int) tileViewNumberOfCells:(KLTileView *)tileView1
 {
     return [images count];
-    
-    
 }
 
 - (KLTileViewCell *) tileView:(KLTileView *)tileView1 cellForIndex:(int)index

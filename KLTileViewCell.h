@@ -21,6 +21,7 @@ typedef enum
     UIButton *removeButton;
     UIImageView *image;
     SlidesViewItemState state;
+    SlidesViewItemState oldState;
     BOOL removeIconVisible;
 
     id<KLTileViewItemDelegate> delegate;
@@ -44,5 +45,6 @@ typedef enum
 
 @protocol KLTileViewItemDelegate
 - (void) tileViewItemRemove:(KLTileViewCell*)slidesViewItem;
+- (void) tileViewItemDidFinishAnimatingFromState:(SlidesViewItemState)state;
 
 @end
