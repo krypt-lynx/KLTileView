@@ -13,6 +13,7 @@
 @synthesize state;
 @synthesize removeIconVisible;
 @synthesize delegate;
+@synthesize image;
 
 const float ZOOM_EFFECT = 1.4;
 const float BTN_SIZE = 25;
@@ -41,7 +42,7 @@ const float BTN_SIZE = 25;
     [delegate tileViewItemRemove:self];
 }
 
-- (id) initWithImage:(UIImageView *)image_ // todo: WTF?
+- (id) initWithImage:(UIImageView *)image_
 {
     self = [self init];
     if (self)
@@ -52,9 +53,9 @@ const float BTN_SIZE = 25;
     return self;
 }
 
-+ (id) itemWithImage:(UIImage *)image_ // todo: WTF?
++ (id) itemWithImage:(UIImageView *)image_
 {
-    return [[[self alloc] initWithImage:image_] autorelease];
+    return [[[KLTileViewCell alloc] initWithImage:image_] autorelease];
 }
 
 
