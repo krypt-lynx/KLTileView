@@ -3,7 +3,7 @@ KLTileView
 
 UICollectionView like tiles representation with reordering support (currently unfinished)
 
-![alt tag](https://raw2.github.com/krypt-lynx/KLTileView/master/screenshot.png)
+![preview](https://github.com/krypt-lynx/KLTileView/blob/master/screenshot.png)
 
 ----------
 
